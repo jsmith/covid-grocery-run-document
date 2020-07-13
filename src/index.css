@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-gray-800;
+}
+
+.section {
+  @apply bg-red-500 text-center text-white py-2 -mx-20;
+}
+
+h1 {
+  @apply text-6xl font-bold mt-2;
+}
+
+h2 {
+  @apply text-4xl mt-2;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+th {
+  @apply text-white bg-gray-800;
+}
+
+td {
+  /* Bold is the default so we have to do this */
+  @apply font-medium;
+}
+
+table,
+table thead {
+  @apply w-full;
+}
+
+/* tr:nth-child(even) {
+  background: @apply bg-gray-;
+} */
+
+th,
+td {
+  @apply text-left py-1 px-2;
+}
+
+.image-wrapper {
+  @apply flex justify-center mt-2;
+}
+
+.image {
+  @apply shadow-xl;
+}
+
+.image-caption {
+  @apply mt-5 text-gray-700 border-l-8 pl-4;
+}
+
+a {
+  @apply text-blue-500;
+}

@@ -1,0 +1,5 @@
+{
+  "watch": ["src/**/*.html", "src/**/*.css"],
+  "ext": "html,css",
+  "exec": "prince src/index.html"
+}

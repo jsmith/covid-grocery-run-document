@@ -1,0 +1,77 @@
+@page {
+  /* size: 30cm 40cm  */
+  /* background-color: brown; */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* padding: 54pt; */
+}
+
+.page-break,
+.section {
+  break-before: page;
+}
+
+@page {
+  @bottom {
+    content: counter(page);
+    font-family: Press;
+    font-size: 20px;
+    color: #444;
+  }
+}
+
+@font-face {
+  font-family: Press;
+  src: url("./coolvetica/coolvetica\ rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Bangers;
+  src: url("./bangers.regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./Montserrat/Montserrat-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+/* To space out the paragraphs */
+p + p {
+  margin-top: 1rem;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+h1 {
+  font-family: Bangers;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Press;
+}
+
+/* .vertical-align {
+  vertical-align: middle;
+} */
+
+tr:nth-child(odd) {
+  background: #ddd;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab Report</title>
+    <link href="tailwind.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <div class="text-6xl">
+      HELLOw
+    </div> -->
+    <h1
+      class="tracking-wider bg-red-500 text-white text-center mt-32 pt-32 pb-6"
+    >
+      COVID Grocery Run ϟ
+    </h1>
+    <!-- <div class="flex justify-center"> -->
+    <div class="flex justify-center mt-4">
+      <img src="./bag_of_groceries.png" alt="Bag of groceries" width="350" />
+    </div>
+
+    <!-- </div> -->
+    <h2 class="subtitle text-center pt-4">Design Document</h2>
+    <h3 class="subtitle text-center text-gray-700 pt-4">
+      Created by Jacob Smith (3534295)
+    </h3>
+    <h3 class="subtitle text-center text-gray-700">
+      Last updated on July 16th, 2020
+    </h3>
+    <h3 class="subtitle text-center text-gray-700">
+      UNB / MAAC3601 / Jeff Mundee
+    </h3>
+    <!-- <div class="page-break"></div> -->
+
+    <h2 class="section">Game Overview</h2>
+    <h2>Logline</h2>
+    <p>
+      <span class="italic">COVID Grocery Run</span> follows an individual in the
+      midst of the COVID-19 pandemic trying to get their groceries. This person
+      must follow the recommended safety guidelines, including wearing a mask
+      and following appropriate social distancing requirements or risk the
+      consequences.
+    </p>
+
+    <h2>Genre & Themes</h2>
+    <p>
+      This game falls under Action/Adventure RPG genre. Users will have
+      real-time control over their character as they navigate the obstacles in a
+      grocery store. Unlike many RPGs, there will be no combat abilities.
+      Instead, users will continuously be on the defensive.
+    </p>
+
+    <p>
+      The central themes of <span class="italic">COVID Grocery Run</span> are
+      science and education. Players who have no previous knowledge on the
+      <a
+        href="https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/covid19.html"
+        >safety guidelines</a
+      >
+      from Health Canada should a basic understanding of some of these tips by
+      the end of the game.
+    </p>
+
+    <h2>Features</h2>
+    <table>
+      <tr>
+        <th>Features</th>
+      </tr>
+      <tr>
+        <td>
+          Intractable items (sanitation stations, masks)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Multiple levels of increasing difficulty
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Challenging maps which need skill and focus to maps
+        </td>
+      </tr>
+    </table>
+
+    <h2>Gameplay Example</h2>
+    <p>
+      You need to get bananas but the produce section is currently very crowded.
+      To enter this section, you need to find the non-medical mask because it
+      will not be possible to maintain a 2m distance from others upon entering
+      this section. Even with the mask, it's important that you avoid others as
+      much as possible while getting your bananas.
+    </p>
+
+    <h2>Mockups</h2>
+    <h3>Home Screen</h3>
+    <div class="image-wrapper">
+      <img class="image" src="./COVID Grocery Run.png" width="700" />
+    </div>
+    <div class="image-caption">
+      The home screen of <span class="italic">COVID Grocery Run</span>. In
+      addition to starting the game, users will be able to navigate directly to
+      the credits.
+    </div>
+
+    <h3>Gameplay</h3>
+    <div class="image-wrapper">
+      <img class="image" src="./level1.png" width="650" />
+    </div>
+    <div class="image-caption">
+      A gameplay mockup built using Game Maker 2. The main character (red shirt)
+      will enter by one door, collect the food items and then exit the other
+      door. Users will be required to be continuously alert to avoid other
+      individuals as they move around the store. Masks (not pictured) will offer
+      additional protection and sanitation stations (not pictured) will allow
+      users to recuperate lost health.
+    </div>
+
+    <h2>Art Style</h2>
+    <p>
+      <span class="italic">COVID Grocery Run</span> will use have a retro RPG
+      look by making use of pixel art. These images will be sourced from popular
+      art such as <a href="https://itch.io">itch.io</a> and
+      <a href="https://opengameart.org">OpenGameArt.Org</a>
+    </p>
+
+    <h2>Why is it fun?</h2>
+    <p>
+      <span class="italic">COVID Grocery Run</span> aims to educate while
+      entertaining at the same time. The game will offer unique yet difficult
+      challenges to players. Time, in addition to score, will be used to rank
+      players to provide a competitive environment.
+    </p>
+
+    <h2 class="section">Design Details</h2>
+
+    <h2>Pillars of Design</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          Easy to learn
+        </td>
+        <td>
+          Players should be able to understand the objective and mechanics of
+          the game with little to no text.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Promotes public health guidelines
+        </td>
+        <td>
+          Guidelines from Public Health Canada should be used when determining
+          what actions should and should not receive consequences.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Challenging
+        </td>
+        <td>
+          The game should require attention and skill complete.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Aesthetically pleasing
+        </td>
+        <td>
+          The home screen and grocery store, the transitions, and the characters
+          should be aesthetically pleasing.
+        </td>
+      </tr>
+    </table>
+
+    <h2>Characters</h2>
+    There will only be one distinct character for this game, the individual on a
+    mission to find all of their groceries. There will be numerous other people
+    walking throughout the store; however, these people will be "strangers" and
+    must simply be avoided. Due to the limitations of the selected character
+    pack and time constraints, only two sprite sets will be used (selected at
+    random for each "stranger") to populate the entire grocery store.
+
+    <div class="image-wrapper">
+      <img src="./Character_1_48x48.png" width="350" />
+    </div>
+    <div class="image-caption">
+      The main character sprite set obtained from
+      <a href="https://itch.io">itch.io</a>. In addition to this three-frame
+      set, three others (one for each direction) will be used for animating the
+      movement. Two other character sprite sets will be used to animate the
+      "strangers" in the grocery store.
+    </div>
+
+    <div class="image-wrapper">
+      <img src="./Character_2_48x48.png" width="350" />
+    </div>
+    <div class="image-caption">
+      The first "stranger" sprite set obtained from
+      <a href="https://itch.io">itch.io</a>.
+    </div>
+
+    <div class="image-wrapper">
+      <img src="./Character_3_48x48.png" width="350" />
+    </div>
+    <div class="image-caption">
+      The second "stranger" sprite set obtained from
+      <a href="https://itch.io">itch.io</a>.
+    </div>
+
+    <!-- Design Details include pillars of design, characters, story and setting, core mechanics, features broken
+down, balancing diagrams for units or attacks or items, audio styles, asset production, level design,
+obstacles and other interactive elements, UI design, enemy NPCs and their behaviors, development tools,
+explanation of how the game will be received, and anything else that is important to your game. -->
+
+    <h2>Story & Setting</h2>
+    <p>
+      The premise of the story is that a young man has been asked by his mom to
+      pick items from the grocery store during the COVID-19 pandemic. Time
+      permitting, a small introduction sequence will be shown to set background
+      information. The gameplay will take place within a grocery store full with
+      other people.
+    </p>
+
+    <div class="image-wrapper">
+      <img src="./intro_sequence.png" width="700" />
+    </div>
+    <div class="image-caption">
+      The intro sequence mockup up using
+      <a href="https://excalidraw.com/">excalidraw.com</a>. Time permitting,
+      this will be added to better introduce the premise of the game.
+    </div>
+
+    <h2>Core Mechanics</h2>
+    <p>
+      TODO
+    </p>
+
+    <h2>Pipeline Overview</h2>
+    <p>
+      TODO
+    </p>
+
+    <h2>Controls</h2>
+    <p>
+      TODO table
+    </p>
+
+    <h2>Loading & Menu Flow Chart</h2>
+    <p>
+      TODO flow chart
+    </p>
+
+    <!-- <h2>Credits Flow Chart</h2>
+    <p>
+      TODO flow chart
+    </p> -->
+
+    <h2>Loading Screen Mockup</h2>
+    <p>
+      TODO mockup
+    </p>
+
+    <h2>Menu Mockup</h2>
+    <p>
+      TODO mockup
+    </p>
+
+    <h2>Gameplay Mockup</h2>
+    <p>
+      TODO mockup
+    </p>
+
+    <h2 class="section">Characters & Items</h2>
+    <h2>Main Character</h2>
+    <p>
+      TODO image and description. Maybe describe flow charts for health
+      decreases?
+    </p>
+
+    <h2>Strangers</h2>
+    <p>
+      TODO images and description
+    </p>
+
+    <h2>Masks</h2>
+    <p>
+      TODO images and description
+    </p>
+
+    <h2>Hand Washing Stations</h2>
+    <p>
+      TODO images and description
+    </p>
+
+    <h2>Grocery Items</h2>
+    <p>
+      TODO images and description
+    </p>
+
+    <h2 class="section">Game Setting</h2>
+    <h2>Shop & Levels</h2>
+    <p>
+      TODO
+    </p>
+
+    <h2>Transitions</h2>
+    <p>
+      TODO
+    </p>
+
+    <h2 class="section">References</h2>
+    <p>
+      https://www.cleanpng.com/png-grocery-store-organic-food-supermarket-computer-ic-964321/download-png.html
+      https://www.pngbarn.com/png-image-cskvb
+    </p>
+  </body>
+</html>
