@@ -44,7 +44,7 @@
 
     <h2>Genre & Themes</h2>
     <p>
-      This game falls under Action/Adventure RPG genre. Users will have
+      This game falls under the Action/Adventure RPG genre. Users will have
       real-time control over their character as they navigate the obstacles in a
       grocery store. Unlike many RPGs, there will be no combat abilities.
       Instead, users will continuously be on the defensive.
@@ -57,8 +57,8 @@
         href="https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/covid19.html"
         >safety guidelines</a
       >
-      from Health Canada should a basic understanding of some of these tips by
-      the end of the game.
+      from Health Canada should have a basic understanding of some of these tips
+      by the end of the game.
     </p>
 
     <h2>Features</h2>
@@ -217,6 +217,8 @@ down, balancing diagrams for units or attacks or items, audio styles, asset prod
 obstacles and other interactive elements, UI design, enemy NPCs and their behaviors, development tools,
 explanation of how the game will be received, and anything else that is important to your game. -->
 
+    <!-- https://www.pomu.com/game/impossible-game.html -->
+
     <h2>Story & Setting</h2>
     <p>
       The premise of the story is that a young man has been asked by his mom to
@@ -237,80 +239,112 @@ explanation of how the game will be received, and anything else that is importan
 
     <h2>Core Mechanics</h2>
     <p>
-      TODO
+      The core mechanic of the game will movement. Players will use WASD keys
+      (or the arrow keys) to navigate throughout the grocery store to collect
+      their groceries while carefully avoiding other individuals. Players will
+      have a health bar that decreases every time they come near another
+      individual. Intractable items will allow players to reduce the damage
+      caused by other individuals and to recover some of their lost health.
     </p>
 
-    <h2>Pipeline Overview</h2>
+    <h2>Interactive Elements</h2>
+    <h3>Masks</h3>
     <p>
-      TODO
+      In some levels, players will be able to pick and wear a mask to reduce the
+      magnitude of inflicted damage by half. These masks will sometimes be out
+      of the way; however, they may still be an essential aspect to completing
+      the level.
     </p>
 
-    <h2>Controls</h2>
+    <div class="image-wrapper">
+      <img src="./mask.png" width="400" />
+    </div>
+    <div class="image-caption">
+      A poorly drawn sprite of the mask that will be located within some levels
+      of the game. A player will be able to pick this up to reduce the damage
+      inflicted by others.
+    </div>
+
+    <h3>Sanitization Stations</h3>
     <p>
-      TODO table
+      Sanitization stations will be located at key locations to help players
+      heal throughout levels. These stations may be placed in the middle of
+      stores to give players respite in a difficult level.
     </p>
 
-    <h2>Loading & Menu Flow Chart</h2>
+    <div class="image-wrapper">
+      <img src="./sanitization.png" width="200" />
+    </div>
+    <div class="image-caption">
+      A hand washing station that will double as a sanitization station. These
+      will placed at key locations to provide respite for players on difficult
+      levels.
+    </div>
+
+    <h2>Movement of Strangers</h2>
     <p>
-      TODO flow chart
+      The algorithm that determines the movement of others in the grocery store
+      (strangers) is the key aspect of this game challenging and fun. The
+      placement and movement of strangers will need to be carefully coordinated
+      to ensure levels are challenging but properly progress in difficulty. To
+      make things simple, players will move in a predefined pattern with varying
+      levels of breaks. For example, in a grid of 32 x 32 blocks, one stranger
+      may be programmed to move from position (4, 5) to (4, 9), wait for one
+      second, and then move back to (4, 5) before breaking again for another
+      second and repeating. Another stranger may be programmed to move between
+      three different positions.
     </p>
 
-    <!-- <h2>Credits Flow Chart</h2>
-    <p>
-      TODO flow chart
-    </p> -->
+    <div class="image-wrapper">
+      <img src="./walking.png" width="400" />
+    </div>
+    <div class="image-caption">
+      Strangers will be preprogrammed to follow defined routes at a specific
+      speed and at a specific interval.
+    </div>
 
-    <h2>Loading Screen Mockup</h2>
+    <!-- TODO features broken down -->
+    <!-- TODO risk?? -->
+
+    <h2>Audio Style</h2>
     <p>
-      TODO mockup
+      The audio style will follow the art style and attempt to use "8-bit"
+      sounds as much as possible. The background music of the gameplay will be
+      very generic music. For example,
+      <a href="https://www.youtube.com/watch?v=Ap-tFncnV6k"
+        >Sounds For The Supermarket</a
+      >
+      was a jingle created specifically for grocery stores in 1975.
     </p>
 
-    <h2>Menu Mockup</h2>
+    <h2>Development Tools</h2>
     <p>
-      TODO mockup
+      <code>Game Maker 2</code> will be used for game development. Playing to my
+      strengths, <code>HTML</code> and <code>CSS</code> will be used to create
+      items such as buttons, modals, text bubbles, etc. This document itself was
+      created using web technologies! Additionally, <code>FL Studio</code>, a
+      software that I am extremely familiar with, will be used for audio
+      editing.
     </p>
 
-    <h2>Gameplay Mockup</h2>
+    <h2>How the game will be received?</h2>
     <p>
-      TODO mockup
+      This game attempts to focus on the safety aspects of COVID-19 and avoid
+      wording that makes it seem that users become "injected" when they lose.
+      Instead, users lose when they don't follow safety guidelines. COVID-19 is
+      still a very real problem, especially in certain countries/regions, and
+      many people are still suffering loss due to this virus. Due to this focus
+      on safety and the challenging aspects of the game, I believe that there
+      should be a positive reception.
     </p>
 
-    <h2 class="section">Characters & Items</h2>
-    <h2>Main Character</h2>
+    <h2>Conclusion</h2>
     <p>
-      TODO image and description. Maybe describe flow charts for health
-      decreases?
-    </p>
-
-    <h2>Strangers</h2>
-    <p>
-      TODO images and description
-    </p>
-
-    <h2>Masks</h2>
-    <p>
-      TODO images and description
-    </p>
-
-    <h2>Hand Washing Stations</h2>
-    <p>
-      TODO images and description
-    </p>
-
-    <h2>Grocery Items</h2>
-    <p>
-      TODO images and description
-    </p>
-
-    <h2 class="section">Game Setting</h2>
-    <h2>Shop & Levels</h2>
-    <p>
-      TODO
-    </p>
-
-    <h2>Transitions</h2>
-    <p>
-      TODO
+      COVID Grocery Run will be an action packed game that’ll make you wish you
+      never had to get groceries again. While playing, you will simultaneously
+      learn about about important guidelines directly from Public Health Canada.
+      Unique game mechanics coupled with a classically designed Action/Adventure
+      RPG will make this fun for all ages!
     </p>
 
     <h2 class="section">References</h2>
