@@ -52,7 +52,7 @@
 
     <p>
       The central themes of <span class="italic">COVID Grocery Run</span> are
-      science and education. Players who have no previous knowledge on the
+      science and education. Players who have no previous knowledge of the
       <a
         href="https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/covid19.html"
         >safety guidelines</a
@@ -78,18 +78,28 @@
       </tr>
       <tr>
         <td>
-          Challenging maps which need skill and focus to maps
+          Challenging maps which need skill and focus to navigate
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Scores will be saved locally and users will be able to see the
+          leaderboard*
         </td>
       </tr>
     </table>
+    <p class="text-gray-700 italic text-sm">
+      *This feature may be cut if there is not enough implementation time.
+    </p>
 
     <h2>Gameplay Example</h2>
     <p>
       You need to get bananas but the produce section is currently very crowded.
       To enter this section, you need to find the non-medical mask because it
-      will not be possible to maintain a 2m distance from others upon entering
-      this section. Even with the mask, it's important that you avoid others as
-      much as possible while getting your bananas.
+      will not be possible to maintain the appropriate distance from others upon
+      entering this section. Even with the mask, you must avoid others as much
+      as possible while getting your bananas so that you lose minimal health
+      points.
     </p>
 
     <h2>Mockups</h2>
@@ -100,27 +110,28 @@
     <div class="image-caption">
       The home screen of <span class="italic">COVID Grocery Run</span>. In
       addition to starting the game, users will be able to navigate directly to
-      the credits.
+      the credits. Time permitting, a leaderboards screen will also be
+      available.
     </div>
 
     <h3>Gameplay</h3>
     <div class="image-wrapper">
-      <img class="image" src="./level1.png" width="650" />
+      <img class="image" src="./level1.png" width="600" />
     </div>
     <div class="image-caption">
-      A gameplay mockup built using Game Maker 2. The main character (red shirt)
-      will enter by one door, collect the food items and then exit the other
-      door. Users will be required to be continuously alert to avoid other
-      individuals as they move around the store. Masks (not pictured) will offer
-      additional protection and sanitation stations (not pictured) will allow
-      users to recuperate lost health.
+      A gameplay mockup built using <code>Game Maker 2</code>. The main
+      character (red shirt) will enter by one door, collect the food items and
+      then exit the other door. Users will be required to be continuously alert
+      to avoid other individuals as they move around the store. Masks (not
+      pictured) will offer additional protection and sanitation stations (not
+      pictured) will allow users to recuperate lost health.
     </div>
 
     <h2>Art Style</h2>
     <p>
       <span class="italic">COVID Grocery Run</span> will use have a retro RPG
       look by making use of pixel art. These images will be sourced from popular
-      art such as <a href="https://itch.io">itch.io</a> and
+      art repositories such as <a href="https://itch.io">itch.io</a> and
       <a href="https://opengameart.org">OpenGameArt.Org</a>
     </p>
 
@@ -163,7 +174,7 @@
           Challenging
         </td>
         <td>
-          The game should require attention and skill complete.
+          The game should require attention and skill to complete.
         </td>
       </tr>
       <tr>
@@ -224,7 +235,7 @@ explanation of how the game will be received, and anything else that is importan
       The premise of the story is that a young man has been asked by his mom to
       pick items from the grocery store during the COVID-19 pandemic. Time
       permitting, a small introduction sequence will be shown to set background
-      information. The gameplay will take place within a grocery store full with
+      information. The gameplay will take place within a grocery store full of
       other people.
     </p>
 
@@ -242,18 +253,43 @@ explanation of how the game will be received, and anything else that is importan
       The core mechanic of the game will movement. Players will use WASD keys
       (or the arrow keys) to navigate throughout the grocery store to collect
       their groceries while carefully avoiding other individuals. Players will
-      have a health bar that decreases every time they come near another
-      individual. Intractable items will allow players to reduce the damage
-      caused by other individuals and to recover some of their lost health.
+      lose one health heart every time they come near another individual.
+      Intractable items will allow players to reduce the damage caused by other
+      individuals and to recover some of their lost health.
     </p>
+
+    <h2>Movement of Strangers</h2>
+    <p>
+      The algorithm that determines the movement of others in the grocery store
+      (the strangers) is the key to making this game challenging and fun. The
+      placement and movement of strangers will need to be carefully coordinated
+      to ensure levels are challenging but properly progress in difficulty. To
+      make things simple, strangers will move in a predefined pattern with
+      varying levels of breaks. For example, in a grid of 32 x 32 blocks, one
+      stranger may be programmed to move from position (4, 5) to (4, 9), wait
+      for one second, and then move back to (4, 5) before breaking again for
+      another second and then finally repeating. Additionally, a stranger may be
+      programmed to move between more than two different positions.
+    </p>
+
+    <div class="image-wrapper">
+      <img src="./walking.png" width="400" />
+    </div>
+    <div class="image-caption">
+      Strangers will be preprogrammed to follow defined routes at a specific
+      speed and a specific interval. In the above example, this person will talk
+      to the "X" point before stopping and travelling to their next location. If
+      there are no more locations in their route, they will return to their
+      initial position and start again.
+    </div>
 
     <h2>Interactive Elements</h2>
     <h3>Masks</h3>
     <p>
       In some levels, players will be able to pick and wear a mask to reduce the
       magnitude of inflicted damage by half. These masks will sometimes be out
-      of the way; however, they may still be an essential aspect to completing
-      the level.
+      of the way; however, they may still important to complete the level, thus
+      forcing players to retrieve the mask.
     </p>
 
     <div class="image-wrapper">
@@ -269,7 +305,7 @@ explanation of how the game will be received, and anything else that is importan
     <p>
       Sanitization stations will be located at key locations to help players
       heal throughout levels. These stations may be placed in the middle of
-      stores to give players respite in a difficult level.
+      stores to give players respite if the level is difficult.
     </p>
 
     <div class="image-wrapper">
@@ -277,30 +313,8 @@ explanation of how the game will be received, and anything else that is importan
     </div>
     <div class="image-caption">
       A hand washing station that will double as a sanitization station. These
-      will placed at key locations to provide respite for players on difficult
-      levels.
-    </div>
-
-    <h2>Movement of Strangers</h2>
-    <p>
-      The algorithm that determines the movement of others in the grocery store
-      (strangers) is the key aspect of this game challenging and fun. The
-      placement and movement of strangers will need to be carefully coordinated
-      to ensure levels are challenging but properly progress in difficulty. To
-      make things simple, players will move in a predefined pattern with varying
-      levels of breaks. For example, in a grid of 32 x 32 blocks, one stranger
-      may be programmed to move from position (4, 5) to (4, 9), wait for one
-      second, and then move back to (4, 5) before breaking again for another
-      second and repeating. Another stranger may be programmed to move between
-      three different positions.
-    </p>
-
-    <div class="image-wrapper">
-      <img src="./walking.png" width="400" />
-    </div>
-    <div class="image-caption">
-      Strangers will be preprogrammed to follow defined routes at a specific
-      speed and at a specific interval.
+      will be placed at key locations to provide respite for players on
+      difficult levels.
     </div>
 
     <!-- TODO features broken down -->
@@ -310,11 +324,12 @@ explanation of how the game will be received, and anything else that is importan
     <p>
       The audio style will follow the art style and attempt to use "8-bit"
       sounds as much as possible. The background music of the gameplay will be
-      very generic music. For example,
+      very generic. For example,
       <a href="https://www.youtube.com/watch?v=Ap-tFncnV6k"
         >Sounds For The Supermarket</a
       >
-      was a jingle created specifically for grocery stores in 1975.
+      was a jingle created specifically for grocery stores in 1975 and will
+      likely be used for the Alpha version.
     </p>
 
     <h2>Development Tools</h2>
@@ -323,34 +338,27 @@ explanation of how the game will be received, and anything else that is importan
       strengths, <code>HTML</code> and <code>CSS</code> will be used to create
       items such as buttons, modals, text bubbles, etc. This document itself was
       created using web technologies! Additionally, <code>FL Studio</code>, a
-      software that I am extremely familiar with, will be used for audio
-      editing.
+      professional Digital Audio Workstation, will be used for audio editing.
     </p>
 
-    <h2>How the game will be received?</h2>
+    <h2>How will the game be received?</h2>
     <p>
       This game attempts to focus on the safety aspects of COVID-19 and avoid
       wording that makes it seem that users become "injected" when they lose.
       Instead, users lose when they don't follow safety guidelines. COVID-19 is
       still a very real problem, especially in certain countries/regions, and
-      many people are still suffering loss due to this virus. Due to this focus
-      on safety and the challenging aspects of the game, I believe that there
-      should be a positive reception.
+      many people are still suffering loss because of this virus. Due to this
+      focus on safety and the challenging aspects of the game, the game should
+      receive a positive reception.
     </p>
 
     <h2>Conclusion</h2>
     <p>
-      COVID Grocery Run will be an action packed game that’ll make you wish you
-      never had to get groceries again. While playing, you will simultaneously
-      learn about about important guidelines directly from Public Health Canada.
+      COVID Grocery Run will be an action-packed game that’ll make you wish you
+      never had to get groceries again! While playing, you will simultaneously
+      learn about important guidelines directly from Public Health Canada.
       Unique game mechanics coupled with a classically designed Action/Adventure
       RPG will make this fun for all ages!
-    </p>
-
-    <h2 class="section">References</h2>
-    <p>
-      https://www.cleanpng.com/png-grocery-store-organic-food-supermarket-computer-ic-964321/download-png.html
-      https://www.pngbarn.com/png-image-cskvb
     </p>
   </body>
 </html>
