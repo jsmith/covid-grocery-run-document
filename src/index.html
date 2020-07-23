@@ -25,7 +25,7 @@
       Created by Jacob Smith (3534295)
     </h3>
     <h3 class="subtitle text-center text-gray-700">
-      Last updated on July 16th, 2020
+      Last updated on July 23rd, 2020
     </h3>
     <h3 class="subtitle text-center text-gray-700">
       UNB / MAAC3601 / Jeff Mundee
@@ -44,10 +44,10 @@
 
     <h2>Genre & Themes</h2>
     <p>
-      This game falls under the Action/Adventure RPG genre. Users will have
+      This game falls under the Action/Adventure RPG genre. Players will have
       real-time control over their character as they navigate the obstacles in a
       grocery store. Unlike many RPGs, there will be no combat abilities.
-      Instead, users will continuously be on the defensive.
+      Instead, players will continuously be on the defensive.
     </p>
 
     <p>
@@ -78,12 +78,13 @@
       </tr>
       <tr>
         <td>
-          Challenging maps which need skill and focus to navigate
+          Challenging maps which need skill and focus to detect patterns and
+          navigate
         </td>
       </tr>
       <tr>
         <td>
-          Scores will be saved locally and users will be able to see the
+          Scores will be saved locally and players will be able to see the
           leaderboard*
         </td>
       </tr>
@@ -109,8 +110,8 @@
     </div>
     <div class="image-caption">
       The home screen of <span class="italic">COVID Grocery Run</span>. In
-      addition to starting the game, users will be able to navigate directly to
-      the credits. Time permitting, a leaderboards screen will also be
+      addition to starting the game, players will be able to navigate directly
+      to the credits. Time permitting, a leaderboards screen will also be
       available.
     </div>
 
@@ -121,10 +122,10 @@
     <div class="image-caption">
       A gameplay mockup built using <code>Game Maker 2</code>. The main
       character (red shirt) will enter by one door, collect the food items and
-      then exit the other door. Users will be required to be continuously alert
-      to avoid other individuals as they move around the store. Masks (not
+      then exit the other door. Players will be required to be continuously
+      alert to avoid other individuals as they move around the store. Masks (not
       pictured) will offer additional protection and sanitation stations (not
-      pictured) will allow users to recuperate lost health.
+      pictured) will allow players to recuperate lost health.
     </div>
 
     <h2>Art Style</h2>
@@ -138,9 +139,11 @@
     <h2>Why is it fun?</h2>
     <p>
       <span class="italic">COVID Grocery Run</span> aims to educate while
-      entertaining at the same time. The game will offer unique yet difficult
-      challenges to players. Time, in addition to score, will be used to rank
-      players to provide a competitive environment.
+      entertaining at the same time. As levels increase in difficulty, players
+      must improve their skills at detecting movement patterns and planning
+      their routes so that they can ensure proper social distancing. Players
+      will also be forced to use masks and sanitization stations to their
+      advantage as both will be essential to completing the game.
     </p>
 
     <h2 class="section">Design Details</h2>
@@ -233,10 +236,9 @@ explanation of how the game will be received, and anything else that is importan
     <h2>Story & Setting</h2>
     <p>
       The premise of the story is that a young man has been asked by his mom to
-      pick items from the grocery store during the COVID-19 pandemic. Time
-      permitting, a small introduction sequence will be shown to set background
-      information. The gameplay will take place within a grocery store full of
-      other people.
+      pick items from the grocery store during the COVID-19 pandemic. A small
+      introduction sequence will be shown to set background information. The
+      gameplay will take place within a grocery store full of other people.
     </p>
 
     <div class="image-wrapper">
@@ -244,8 +246,7 @@ explanation of how the game will be received, and anything else that is importan
     </div>
     <div class="image-caption">
       The intro sequence mockup up using
-      <a href="https://excalidraw.com/">excalidraw.com</a>. Time permitting,
-      this will be added to better introduce the premise of the game.
+      <a href="https://excalidraw.com/">excalidraw.com</a>.
     </div>
 
     <h2>Core Mechanics</h2>
@@ -253,9 +254,20 @@ explanation of how the game will be received, and anything else that is importan
       The core mechanic of the game will movement. Players will use WASD keys
       (or the arrow keys) to navigate throughout the grocery store to collect
       their groceries while carefully avoiding other individuals. Players will
-      lose one health heart every time they come near another individual.
-      Intractable items will allow players to reduce the damage caused by other
-      individuals and to recover some of their lost health.
+      lose health (the exact amount will be optimized during testing) every time
+      they come near another individual and lose instantly if they come in
+      contact with another person. Intractable items will allow players to
+      reduce the damage caused by other individuals and to recover some of their
+      lost health.
+    </p>
+
+    <h2>Game Objectives</h2>
+    <p>
+      The objective of the game will simply be to make it from one side of the
+      store to the exit while collecting <i>all</i> food items from the store.
+      The game will have multiple levels, each requiring the player to collect a
+      new set of items and exit safely. If a player loses on one level, they
+      will simply be able to restart that level.
     </p>
 
     <h2>Movement of Strangers</h2>
@@ -287,18 +299,19 @@ explanation of how the game will be received, and anything else that is importan
     <h3>Masks</h3>
     <p>
       In some levels, players will be able to pick and wear a mask to reduce the
-      magnitude of inflicted damage by half. These masks will sometimes be out
-      of the way; however, they may still important to complete the level, thus
-      forcing players to retrieve the mask.
+      magnitude of inflicted damage by some factor (to be determined during
+      testing). These masks will sometimes be out of the way; however, they may
+      still important to complete the level, thus forcing players to retrieve
+      the mask.
     </p>
 
     <div class="image-wrapper">
       <img src="./mask.png" width="400" />
     </div>
     <div class="image-caption">
-      A poorly drawn sprite of the mask that will be located within some levels
-      of the game. A player will be able to pick this up to reduce the damage
-      inflicted by others.
+      A sprite of the mask that will be located within some levels of the game.
+      A player will be able to pick this up to reduce the damage inflicted by
+      others.
     </div>
 
     <h3>Sanitization Stations</h3>
@@ -317,9 +330,6 @@ explanation of how the game will be received, and anything else that is importan
       difficult levels.
     </div>
 
-    <!-- TODO features broken down -->
-    <!-- TODO risk?? -->
-
     <h2>Audio Style</h2>
     <p>
       The audio style will follow the art style and attempt to use "8-bit"
@@ -329,7 +339,10 @@ explanation of how the game will be received, and anything else that is importan
         >Sounds For The Supermarket</a
       >
       was a jingle created specifically for grocery stores in 1975 and will
-      likely be used for the Alpha version.
+      likely be used for the Alpha version. Sound will also be used to indicate
+      to the player how much health is remaining. Using builtin
+      <code>Game Maker 2</code> audio tools, the pitch of the background music
+      increase as players lose health points.
     </p>
 
     <h2>Development Tools</h2>
@@ -344,9 +357,9 @@ explanation of how the game will be received, and anything else that is importan
     <h2>How will the game be received?</h2>
     <p>
       This game attempts to focus on the safety aspects of COVID-19 and avoid
-      wording that makes it seem that users become "injected" when they lose.
-      Instead, users lose when they don't follow safety guidelines. COVID-19 is
-      still a very real problem, especially in certain countries/regions, and
+      wording that makes it seem that players become "injected" when they lose.
+      Instead, players lose when they don't follow safety guidelines. COVID-19
+      is still a very real problem, especially in certain countries/regions, and
       many people are still suffering loss because of this virus. Due to this
       focus on safety and the challenging aspects of the game, the game should
       receive a positive reception.
@@ -355,10 +368,13 @@ explanation of how the game will be received, and anything else that is importan
     <h2>Conclusion</h2>
     <p>
       COVID Grocery Run will be an action-packed game that’ll make you wish you
-      never had to get groceries again! While playing, you will simultaneously
-      learn about important guidelines directly from Public Health Canada.
-      Unique game mechanics coupled with a classically designed Action/Adventure
-      RPG will make this fun for all ages!
+      never had to get groceries again! While playing, players will
+      simultaneously learn about important guidelines directly from Public
+      Health Canada. Players will be challenged to observe movement patterns and
+      to plan their routes carefully so that they can ensure proper social
+      distancing. They will also need to learn how to use masks & sanitization
+      stations to their advantage. These unique game mechanics coupled with a
+      classically designed Action/Adventure RPG will make this fun for all ages!
     </p>
   </body>
 </html>
