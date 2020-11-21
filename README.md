@@ -1,7 +1,7 @@
 # Design Document
-The COVID Shopping design document.
+The [COVID Grocery Run](https://github.com/jsmith/covid-grocery-run) design document.
 
-Check out [document.pdf](https://github.com/jsmith/covid-shopping-document/blob/main/document.pdf) to see the results :)
+Check out [document.pdf](https://github.com/jsmith/covid-grocery-run-document/blob/main/document.pdf) to see the results :)
 
 ## Setup
 ```
